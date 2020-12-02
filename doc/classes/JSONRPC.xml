@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <class name="JSONRPC" inherits="Object" version="4.0">
 	<brief_description>
+		JSONRPC 2.0 object
 	</brief_description>
 	<description>
+		Implements [url=https://www.jsonrpc.org/specification]JSONRPC 2.0[/url] specification.
 	</description>
 	<tutorials>
+		
 	</tutorials>
 	<methods>
 		<method name="make_notification">
@@ -15,6 +18,7 @@
 			<argument index="1" name="params" type="Variant">
 			</argument>
 			<description>
+				Returns a [Dictionary] formatted to be a JSONRPC 2.0 notification object.
 			</description>
 		</method>
 		<method name="make_request">
@@ -27,6 +31,7 @@
 			<argument index="2" name="id" type="Variant">
 			</argument>
 			<description>
+				Returns a [Dictionary] formatted to be a JSONRPC 2.0 request object.
 			</description>
 		</method>
 		<method name="make_response">
@@ -37,6 +42,7 @@
 			<argument index="1" name="id" type="Variant">
 			</argument>
 			<description>
+				Returns a [Dictionary] formatted to be a JSONRPC 2.0 response object.
 			</description>
 		</method>
 		<method name="make_response_error" qualifiers="const">
